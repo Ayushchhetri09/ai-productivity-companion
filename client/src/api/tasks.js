@@ -1,6 +1,9 @@
 import axios from "axios";
 
 const API = "https://ai-productivity-companion-1.onrender.com";
+const API = import.meta.env.VITE_API_URL;
+
+axios.get(`${API}/plan`);
 
 export const getTasks = () => axios.get(`${API}/tasks`);
 
