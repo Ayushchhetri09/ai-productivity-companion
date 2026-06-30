@@ -9,7 +9,7 @@ function AIPlanner() {
     setLoading(true);
 
     try {
-      const res = await axios.get("https://ai-productivity-companion-1.onrender.com");
+      const res = await axios.get("https://ai-productivity-companion-1.onrender.com/plan");
       setPlan(res.data.plan);
     } catch (err) {
       alert("Failed to generate AI plan.");
