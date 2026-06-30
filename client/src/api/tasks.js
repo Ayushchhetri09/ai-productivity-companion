@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:5000";
+const API = "https://ai-productivity-companion-1.onrender.com";
 
 export const getTasks = () => axios.get(`${API}/tasks`);
 
